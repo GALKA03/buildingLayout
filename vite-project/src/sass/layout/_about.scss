@@ -1,0 +1,101 @@
+.about {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(251, 251, 251, 1);
+    margin-bottom: 110px;
+}
+
+.about-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 570px;
+padding-left: 100px;
+    justify-content: space-between;
+}
+.pos{
+position: relative;
+}
+.about-img1 {
+    width: 270px;
+    height: 265px;
+
+}
+
+.about-img2 {
+position: relative;
+top:65px;
+left: 0;
+    width: 270px;
+    height: 345px;
+
+}
+
+.about-img3 {
+    width: 270px;
+    height: 140px;
+
+}
+
+.about-text_conteiner {
+    max-width: 400px;
+    padding: 30px;
+    position: relative;
+    padding: 21px 70px 21px 21px;
+}
+
+.about-text_title {
+    font-size: 64px;
+    color:var(--text-title-color);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.about-text_text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 21px;
+}
+
+// .about-link_conteiner{
+//     position: relative;
+// }
+.about-text_link {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 221px;
+    height: 71px;
+    background-color: white;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+   margin-bottom: 37px;
+    bottom: 0;
+    left: 0;
+
+    /* Use background-image to set the PNG as the background */
+
+    z-index: 2;
+    /* Adjust as needed */
+}
+
+.text-link {
+  
+    color: rgba(51, 51, 51, 1);
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.arrow-svg {
+    fill: #333333;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+}

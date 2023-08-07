@@ -1,0 +1,42 @@
+// $li-bg-color: rgba(51, 51, 51, 0.8);
+// $img-src: url(../../../public/image/projectImg.png);
+$overlay-color: rgba(51, 51, 51, 0.8);
+$img-src: url(../../../public/image/projectImg.png);
+
+
+.title {
+    .title-text {
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 1.2;
+        color: rgba(189, 189, 189, 1);
+        // margin-bottom: 90px;
+    }
+
+    .title-br {
+        color: rgba(51, 51, 51, 1);
+        font-weight: 700;
+    }
+}
+
+
+.contacts{
+// height: 603px;
+margin-bottom: 200px;
+}
+.contacts-container{
+    display: flex;
+    justify-content: space-between;
+   
+ height: 603px;
+   
+}
+.contacts-img{
+    width: 749px;
+    height: 369px;
+}
+.contacts-conteiner_left{
+width: 390px;
+height: 490px;
+position: relative;
+}

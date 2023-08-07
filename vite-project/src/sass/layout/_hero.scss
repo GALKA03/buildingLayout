@@ -1,0 +1,140 @@
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 110px;
+    // padding: 20px;
+}
+
+.hero-left_conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 511px;
+    width: 325;
+}
+
+.hero-img_content {
+    position: relative;
+    display: inline-block;
+    width: 770px;
+    height: 829px;
+}
+
+.hero-img_rectangle {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 221px;
+    height: 71px;
+    background-color: white;
+    color: var(--primary-text-color);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    /* Use background-image to set the PNG as the background */
+    background-image: url("/image/link1.png");
+    background-size: 122px 24px;
+    /* Set the background size */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Adjust as needed */
+}
+
+.hero-img {
+    width: 770px;
+    height: 829px;
+}
+.button-arrow_container {
+    // margin-top: 95px;
+    display: flex;
+}
+
+.button-arrow-left,
+.button-arrow-right {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--button-arrow-hover-color); // Use the variable here
+    width: 53px;
+    height: 53px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+
+    &:before {
+        content: url("/svgs/arroeleft.svg");
+      
+        cursor: pointer;
+    }
+
+    &:hover:before {
+        background-color: var(--button-arrow-hover-color); // Use the variable here as well
+    }
+}
+
+.button-arrow-right:before {
+    content:url("/svgs/arrowright.svg");
+
+    cursor: pointer;
+
+    &:hover:before {
+        background-color: var(--button-arrow-hover-color); // Use the variable here as well
+    }
+}
+
+.button-arrow_item {
+    background-color: transparent;
+    border: solid 1px #F2F2F2;;
+width: 53px;
+height: 53px;
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+  &:hover {
+      background-color: var(--button-arrow-hover-color); // Add any hover styles specific to the left arrow icon if needed
+  }
+}
+
+
+.pagination {
+    color: rgba(189, 189, 189, 1);
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 95px;
+    position: relative;
+}
+
+.pagination-span {
+    font-size: 43px;
+    font-weight: 200;
+    margin: 0px 26px;
+}
+.pagination-number{
+  color: rgba(189, 189, 189, 1);
+    &:not(:last-child){
+        margin-right: 84px;
+    }
+}
+.line-img{
+position: absolute;
+top: -5;
+left: 48px;
+}
+ 
+// .hero-img_text {
+//     margin: 0;
+//     /* Reset the default margin for <h2> element */
+// }
+
+// .hero-img_arrow-icon {
+//     width: 24px;
+//    height: 24px;
+// z-index: 100;
+// }

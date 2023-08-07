@@ -1,0 +1,169 @@
+
+
+$button-text-color: #ffffff;
+
+.form {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    // padding: 40px 40px 40px 40px;
+    
+}
+
+.form-modal__input {
+    height: 45px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    border: none;
+    background-color: rgba(243, 243, 243, 1);
+    border-radius: 4px;
+    outline: none;
+    color: rgba(141, 141, 141, 1);
+}
+.form-modal__input::placeholder {
+    color: rgba(141, 141, 141, 1);
+}
+.form-modal__text {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+}
+
+.form-modal__span {
+    display: inline-block;
+    position: relative;
+}
+
+.form-modal__icon {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}
+
+.form-modal__input:focus {
+    border: gray;
+}
+.form-modal__texteria {
+    // width: 100%;
+    height: 147px; // Set the desired height
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    resize: none; // Disable textarea resizing
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: rgba(141, 141, 141, 1);
+background-color: rgba(243, 243, 243, 1);
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+        border-color: gray;
+    }
+}
+.form-modal__texteria::placeholder {
+    color: rgba(141, 141, 141, 1);
+}
+.form-modal__checkspan{
+margin-left: 10px;
+}
+
+.form-modal__checboxlable {
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: rgba(141, 141, 141, 1);
+    cursor: pointer;
+
+    // Hide the actual checkbox input
+    .form-modal__chackbox {
+        position: absolute;
+        left: -9999px;
+    }
+
+    // Checkbox custom styles
+    &::before {
+        content: url("/svgs/path.svg");
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        border: 1px solid gray;
+        background-color: transparent;
+        border-radius: 4px;
+    }
+
+    // Checked state styles
+    .form-modal__chackbox:checked+&::before {
+        background-color: rgb(221, 228, 233);
+        background-image: url("/svgs/iconcheck.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-color: gray;
+    }
+}
+.checkbox-icon {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px; // Adjust the spacing between the icon and the text
+    display: flex;
+    align-items: center;
+}
+//  svg {
+     
+//      fill: #333333; // Change the fill color as needed
+//  }
+// Define styles for the button link
+.link_container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 221px;
+    height: 71px;
+    background-color: rgba(51, 51, 51, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.button-link {
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 15px;
+    color: #F2F2F2;
+}
+
+
+.svg-white {
+    fill: #ffffff;
+    /* Change the fill color to white */
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    /* Adjust the position and other styles as needed */
+}
+.text-link{
+    color: #F2F2F2;
+    // background-color:  rgba(51, 51, 51, 1);
+}

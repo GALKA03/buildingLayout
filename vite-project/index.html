@@ -2,12 +2,244 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+<header class="header-container container">
+  <div>
+    <img src="../../public/image/logo.png" alt="logo" class="header-img"/>
+  </div>
+  <nav class="header-nav">
+    <ul class="header-nav-menu">
+      <li>
+        <a href="" class="nav-link nav-list__underline active">ГЛАВНАЯ</a>
+      </li>
+      <li class="header-nav-menu_item">
+        <a class="nav-link" href="">ГАЛЕРЕЯ</a>
+      </li>
+      <li class="header-nav-menu_item">
+        <a class="nav-link" href="">ПРОЕКТЫ</a>
+      </li>
+      <li class="header-nav-menu_item">
+        <a class="nav-link" href="">СЕРТИФИКАТЫ</a>
+      </li>
+      <li class="header-nav-menu_item">
+        <a class="nav-link" href=""> КОНТАКТЫ</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <section class="hero section">
+      <div class="hero-left_conteiner">
+        <div>
+          <h1 class="title">
+            <span class="title-text">PROJECT</span>
+            <br class="title-br" />
+            <span class="title-text title-br">HOME</span>
+          </h1>
+        </div>
+        <div class="button-arrow_container">
+          <button class="button-arrow-left button-arrow_item"></button>
+          <button class="button-arrow-right button-arrow_item active"></button>
+        </div>
+        <div class="pagination">
+          <p class="pagination-number">01</p>
+          <img class="line-img" src="./public/image/Line.png" alt="" />
+          <p class="pagination-number">02</p>
+        </div>
+      </div>
+
+      <div class="hero-img_content">
+        <a href="#" class="hero-img_rectangle"></a>
+        <!-- <img class="link1" src="./public/image/link1.png" alt="link"/> -->
+
+        <img class="hero-img" src="./public/image/house-1x.jpg" alt="house" />
+      </div>
+    </section>
+    <!-- /****  about section  ****/ -->
+
+    <section class="about">
+      <ul class="about-menu">
+        <li class="about-item">
+          <img class="about-img1" src="./public/image/h2-1x.png" alt="" />
+        </li>
+        <li class="about-item pos">
+          <img class="about-img2" src="./public/image/h-1x.png" alt="" />
+        </li>
+        <li class="about-item">
+          <img class="about-img3" src="./public/image/h3-1x.png" alt="" />
+        </li>
+      </ul>
+
+      <div class="about-text_conteiner">
+        <h2 class="about-text_title">О компании</h2>
+        <p class="about-text_text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of
+          type and scrambled it to make a type specimen book. It has
+          survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.
+        </p>
+      </div>
+      <div class="about-link_conteiner">
+        <a href="#" class="about-text_link">
+          <p class="text-link">ЧИТАТЬ</p>
+          <img src="./public/svgs/arrow.svg" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- main goals -->
+    <section class="goals">
+      <h2 class="goal-title">Основные задачи</h2>
+      <ul class="goals-menu">
+        <li class="goals-item">
+          <h3 class="goals-number">1</h3>
+          <p class="goals-text">
+            Создание комфортных условий и повышение качества обслуживания
+            клиентов
+          </p>
+        </li>
+        <li class="goals-item">
+          <h3 class="goals-number">2</h3>
+          <p class="goals-text">
+            Постоянно совершенствовать качество предоставляемых услуг путем
+            обучения персонала, закупки нового оборудования и усиленной
+            рекламы на рынке
+          </p>
+        </li>
+      </ul>
+    </section>
+    <!-- projects -->
+    <section class="projects">
+      <h2 class="projects-title">Наши проекты</h2>
+      <ul class="projects-menu">
+        <li class="projects-item cover-img">
+          <img class="projects-img" src="./public/image/pr2-1x.jpg" alt="" />
+        </li>
+        <li class="projects-item">
+          <img class="projects-img" src="./public/image/pr1-1x.jpg" alt="" />
+        </li>
+        <li class="projects-item">
+          <img class="projects-img" src="./public/image/pr3-1x.jpg" alt="" />
+        </li>
+        <li class="projects-item">
+          <img class="projects-img" src="./public/image/pr-4.jpg" alt="" />
+        </li>
+        <li class="projects-item">
+          <img class="projects-img" src="./public/image/pr-5.jpg" alt="" />
+        </li>
+      </ul>
+      <div class="project-link_container">
+        <a href="#" class="project-link">
+          <p class="project-text-link">ВСЕ ПРОЕКТЫ</p>
+          <img class="svg-white" src="./public/svgs/white-arrow.svg" alt="" />
+        </a>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="projects-title">Связаться с нами</h2>
+      <div class="contacts-container">
+        <div class="contacts-conteiner_left">
+          <form class="form">
+            <input type="text" placeholder="Имя" name="name" id="name" class="form-modal__input" autofocus minlength="2"
+              pattern="[а-яА-Я]*" />
+            <input type="tel" name="tel" id="tel" class="form-modal__input" placeholder="Номер телефона"
+              pattern="[0-9]{10}" />
+            <input type="email" placeholder="email" name="email" id="email" class="form-modal__input" />
+            <input type="text" placeholder="Интересующий товар/услуга" name="product" id="product"
+              class="form-modal__input" />
+            <textarea name="feedback" placeholder="Сообщение" id="feedback" class="form-modal__texteria"></textarea>
+
+            <label for="checkbox" class="form-modal__checboxlable">
+              <input type="checkbox" name="checkbox" value="checkbox" id="checkbox"
+                class="form-modal__chackbox visually-hidden" required />
+              <span class="form-modal__checkspan">Отправляя заявку Вы соглашаетесь с политикой
+                конфиденциальности</span>
+            </label>
+            <button class="button-container">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+        <img class="contacts-img" src="./public/image/callimg.jpg" alt="Contact us" />
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <ul class="footer-menu">
+      <li class="footer-item">
+        <img src="./public/image/logoFooter.png" alt="logo" class="footer-img" />
+      </li>
+      <li class="footer-item">
+        <ul class="footer-item-info_menu">
+          <li class="footer-item-title">Информация</li>
+          <li class="footer-item-info_item">Главная</li>
+          <li class="footer-item-info_item">Галерея</li>
+          <li class="footer-item-info_item">Проекты</li>
+          <li class="footer-item-info_item">Сертификаты</li>
+          <li class="footer-item-info_item">Контакты</li>
+        </ul>
+      </li>
+      <li class="footer-item">
+        <address class="footer__address">
+          <p class="footer-item-title">Контакты</p>
+
+          <div class="footer-item-contacts_menu">
+            <div class="footer-item-contacts_item">
+              <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A2%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F+10,+%D0%9A%D0%B0%D1%80%D0%B0%D0%B3%D0%B0%D0%BD%D0%B4%D0%B0+100000,+%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD/@49.823954,73.0856023,17z/data=!3m1!4b1!4m5!3m4!1s0x424346c3b32ffcaf:0x41481e634d919f9e!8m2!3d49.823954!4d73.0856023?entry=ttu"
+                target="_blank" rel="noopener nofollow noreferrer" class="footer-link">
+                <img class="svg-map" src="./public/svgs/map.svg" alt="" />
+                100000, Республика Казахстан,<br class="br-adress" />
+                г. Караганда, ул. Телевизионная 10
+              </a>
+            </div>
+
+            <div class="footer-item-contacts_item">
+              <a href="tel:+380000000000" class="footer-link">
+                <img class="svg-phone" src="./public/svgs/phone.svg" alt="" />
+                +38 (000) 000 00 00
+              </a>
+            </div>
+
+            <div class="footer-item-contacts_item">
+              <a href="mailto:mail@gmail.com" class="footer-link">
+                <img class="svg-email" alt="kjj" src="./public/svgs/email.svg" />
+                mail@gmail.com
+              </a>
+            </div>
+          </div>
+        </address>
+      </li>
+      <li class="footer-item">
+        <h2 class="footer-item-title">Социальные сети</h2>
+        <div class="footer-item_social-container">
+          <a href="#" class="footer-socil-link">
+            <img src="./public/svgs/facebook.svg" alt="" />
+          </a>
+
+          <a href="#" class="footer-socil-link">
+            <img src="./public/svgs/twitter.svg" alt="" />
+          </a>
+          <a href="#" class="footer-socil-link">
+            <img src="./public/svgs/linkedin.svg" alt="" />
+          </a>
+          <a href="#" class="footer-socil-link">
+            <img class="footer-socil-svg" src="./public/svgs/pinterest.svg" alt="" />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

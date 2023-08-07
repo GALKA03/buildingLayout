@@ -1,0 +1,31 @@
+body{
+    background-color: aquamarine
+}
+
+
+
+ @import 'normalize.css';
+ @import './variablse.scss';
+
+
+ @import './base/container';
+@import './base/section';
+ @import './base/base';
+
+@import'./components/buttons';
+ @import'./components/form';
+
+
+ @import './utils/mixins';
+ @import './utils/placeholders';
+@import './utils/root';
+ @import './utils/visually-hidden';
+
+
+ @import './layout/header';
+@import './layout/main';
+ @import './layout/footer';
+ @import './layout/hero';
+ @import './layout/about';
+ @import './layout/goals';
+ @import './layout/projects'

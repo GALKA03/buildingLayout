@@ -1,0 +1,136 @@
+.footer{
+background: rgba(44, 44, 44, 1);
+padding: 58px 10px;
+margin-bottom: 30px;
+}
+
+.footer-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+}
+.footer-img{
+    width: 145px;
+    height: 94px;
+}
+.footer-item-title{
+    text-decoration: none;
+        font-style: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 1);
+}
+.footer-item-info_menu{
+    display:block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 1);
+}
+.footer-item-info_item{
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        color: gray;
+    }
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+.br-adress{
+    margin-right: 14px;
+}
+.footer__address {
+    height: 100%;
+
+    .footer-item-contacts_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 65px; // Adjust the spacing between the items
+
+        .footer-item-contacts_item {
+            display: flex;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 1);
+cursor: pointer;
+
+
+            .svg-map {
+                margin-right: 19px;
+            }
+
+            .svg-phone {
+                margin-right: 11px;
+            }
+
+            .svg-email {
+                margin-right: 14px;
+            }
+        }
+    }
+}
+
+.footer-item_social-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 193px;
+}
+// .margBot{
+// margin-bottom: 60px;
+// }
+// .margBottom{
+//     margin-bottom: 40px;
+    
+// }
+// .footer-item-contacts_menu{
+// // text-align: start;
+// }
+// .footer__address{
+// height: 100%;
+// }
+// .footer-item-contacts_item{
+//     display: flex;
+//     font-size: 14px;
+//         font-weight: 500;
+//         line-height: 1.7;
+//         color: rgba(255, 255, 255, 1);
+// }
+// .svg-map{
+//     // width: 11px;
+//     // height: 16px;
+//     margin-right: 19px;
+    
+// }
+// .svg-phone{
+//     // width: 16px;
+//     // height: 16px;
+//     margin-right: 11px;
+// }
+// .svg-email{
+// margin-right: 14px;
+// }
+.footer-link{
+    font-size: 14px;
+    text-decoration: none;
+    font-style: normal;
+        font-weight: 500;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 1);
+            &:hover,
+                &:focus {
+                    color: gray;
+                }
+}
+.footer-socil-link{
+&:hover,
+    &:focus {
+        fill: gray;
+    }
+}
